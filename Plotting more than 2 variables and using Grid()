@@ -1,0 +1,12 @@
+# plotting multiple variables and introducing the grid()
+import matplotlib.pyplot as plt
+x1= [1,2,3,4,5,6,7]
+x2= [10,9,8]
+y1= [10,4,8,9,2,1,4]
+y2= [2,7,8]
+
+plt.scatter(x1,y1,s=[200,500,300,100,600,400,200], c='green',label="class1")
+plt.scatter(x2,y2,s=300,c='brown',label="class2")
+
+plt.grid()
+plt.show()
