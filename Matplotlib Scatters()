@@ -1,0 +1,7 @@
+# using simple scatter plots
+
+import matplotlib.pyplot as plt
+# .plot() is preferrably used when you don't need to distinguish the markers.
+plt.plot([1,2,3,4],[10,4,6,7], "bo")
+# 'bo' in the above arguements is used to distinguish the type of colour to be used for the dots or points on the graph
+plt.show()
