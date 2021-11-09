@@ -1,0 +1,16 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+dict1 = {
+    "Name" : ['Ada', 'Ann', 'Augusta', 'Elohor', 'Patience', 'Tutu', 'Zainab'],
+    "Age": [24, 27, 24, 28, 35, 27, 28],
+    "Role": ['Personal Assistance', 'Content Lead', np.NaN, 'Content Lead', 'Business Developer', 'Accountant', 'Content Lead'],
+    "Location": ['Isolo', 'Lekki', 'Ajah', 'Lekki', 'Sangotedo', 'Lakowe', np.NaN]
+    
+    new_data = pd.DataFrame(dict1)
+    new_data.to_csv("Data.csv")
+    new_data
+    
+    plt.title("Histogram of different ages")
+    plt.xlabel("Age)
+    new_data.["Age"].plot.hist()
